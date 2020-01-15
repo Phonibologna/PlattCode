@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<h2>I didn't know what to do for this one, so here's a button that makes random stock images appear.</h2>
+<button type="button" id="randomButton" onclick="getPic()">Button</button>
+<br />
+<img id="theImage" src="">
+
+
+<script>
+    function getPic() {
+        var rand = Math.ceil(Math.random() * 9)
+        console.log(rand);
+        switch (rand) {
+            case 1:
+                document.getElementById('theImage').src = "https://localhost:44386/images/bench.jpg";
+                break;
+            case 2:
+                document.getElementById('theImage').src = "https://localhost:44386/images/gun.jpg";
+                break;
+            case 3:
+                document.getElementById('theImage').src = "https://localhost:44386/images/muffin.jpg";
+                break;
+            case 4:
+                document.getElementById('theImage').src = "https://localhost:44386/images/robot.jpg";
+                break;
+            case 5:
+                document.getElementById('theImage').src = "https://localhost:44386/images/swingset.jpg";
+                break;
+            case 6:
+                document.getElementById('theImage').src = "https://localhost:44386/images/tree.jpg";
+                break;
+            case 7:
+                document.getElementById('theImage').src = "https://localhost:44386/images/turtle.jpg";
+                break;
+            case 8:
+                document.getElementById('theImage').src = "https://localhost:44386/images/whale.jpg";
+                break;
+            case 9:
+                document.getElementById('theImage').src = "https://localhost:44386/images/cheeringpeople.jpg";
+                break;
+        }
+
+        
+    }
+</script>
+
